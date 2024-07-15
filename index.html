@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digicalc</title>
+    <link href="./style.css" rel="Stylesheet">
+</head>
+
+<body>
+    <main>
+        <div id="calbox">
+            <form action="">
+                <input type="text" id="dispdata" name="ipdata" onkeypress="return false;"   value="">
+            </form>
+            <div id="keypad">
+                <button class="key" id="ac" onclick="cleardisp('AC')">AC</button>
+                <button class="key" id="ce" onclick="cleardisp('CE')">CE</button>
+                <button class="key opr" id="modu" onclick="key('%')" value="%">%</button>
+                <button class="key opr" id="divi" onclick="key('÷')" value="/">÷</button>
+                <button class="key" id="key7" onclick="key(7)" value="7">7</button>
+                <button class="key" id="key8" onclick="key(8)" value="8">8</button>
+                <button class="key" id="key9" onclick="key(9)" value="9">9</button>
+                <button class="key opr" id="mul" onclick="key('*')" value="*">x</button>
+                <button class="key" id="key4" onclick="key(4)" value="4">4</button>
+                <button class="key" id="key5" onclick="key(5)" value="5">5</button>
+                <button class="key" id="key6" onclick="key(6)" value="6">6</button>
+                <button class="key opr" id="sub" onclick="key('-')" value="-">-</button>
+                <button class="key" id="key1" onclick="key(1)" value="1">1</button>
+                <button class="key" id="key2" onclick="key(2)" value="2">2</button>
+                <button class="key" id="key3" onclick="key(3)" value="3">3</button>
+                <button class="key opr" id="add" onclick="key('+')" value="+">+</button>
+                <button class="key" id="deci" onclick="key('.')" value=".">.</button>
+                <button class="key" id="key0" onclick="key(0)" value="0">0</button>
+                <button class="key" id="equal" onclick="findval()">ANS</button>
+                <button class="key opr" id="pi" onclick="key(3.14)">𝛑</button>
+            </div>
+
+            <section id="desc">
+                <p id="title">Digicalc</p>
+                <p id="about">"Digicalc is created by Abhijeet Bhattacharjee using HTML > CSS > JS. Its one of the
+                    earliest projects made by him. Digicalc is a Simple Digital Calculator used for Mathematical
+                    Operations of Addition, Subtraction, Multiplication, Division, Modulus. It was first released on
+                    2/9/2023 and further updates/versions will be released soon with more functions! Stay connected ,
+                    keep Calculating."</p>
+            </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>
